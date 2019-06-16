@@ -17,9 +17,7 @@ end
 def reduce(source_array, start=false)
   if start == false
     starting = source_array[0]
-    n = 1
   else starting = start
-      n = 0
   end
 
   source_array.length.times do
