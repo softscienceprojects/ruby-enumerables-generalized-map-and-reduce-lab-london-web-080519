@@ -17,13 +17,12 @@ end
 def reduce(source_array, start=false)
   if start == false
     starting = source_array[0]
-    i = 0
   else starting = start
   end
 
   n = 0
   source_array.length.times do
-    starting = yield(starting, source_array[i])
+    starting = yield(starting, source_array[n])
     puts "starting is #{starting}"
     # reduce(source_array){|memo, n| memo + n}
     n += 1
