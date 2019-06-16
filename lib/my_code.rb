@@ -34,7 +34,7 @@ def reduce(source_array, start=false)
   if start == false
     starting = 0 # source_array[0]
   else starting = start
-  
+
   n = 0
   while n < source_array.length do
     starting = yield(starting, source_array[n])
