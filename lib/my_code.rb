@@ -27,3 +27,19 @@ def reduce(source_array, start=true)
   end
   starting
 end
+
+
+
+def reduce(source_array, start=false)
+  if start == false
+    starting = 0 # source_array[0]
+  else starting = start
+  
+  n = 0
+  while n < source_array.length do
+    starting = yield(starting, source_array[n])
+    puts "starting is #{starting}"
+    n += 1
+  end
+  starting
+end
