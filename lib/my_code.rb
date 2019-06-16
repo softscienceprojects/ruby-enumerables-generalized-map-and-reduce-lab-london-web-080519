@@ -37,7 +37,7 @@ def reduce(source_array, start=true)
   end
 
   n = 0
-  while n < source_array.length do
+  source_array.length.times do
     starting = yield(starting, source_array[n])
     puts "starting is #{starting}"
     # reduce(source_array){|memo, n| memo || n}
