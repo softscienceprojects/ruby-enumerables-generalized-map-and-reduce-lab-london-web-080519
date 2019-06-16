@@ -15,11 +15,12 @@ end
 
 
 def reduce(source_array, start=0)
-  if start == 0
-    starting = source_array[0]
-  else starting = start
-  end
+  # if start == 0
+  #   starting = source_array[0]
+  # else starting = start
+  # end
 
+  starting = 0
  n =0
   source_array.length.times do
     starting = yield(starting, source_array[n])
