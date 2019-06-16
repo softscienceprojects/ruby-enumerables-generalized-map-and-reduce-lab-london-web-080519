@@ -22,7 +22,7 @@ def reduce(source_array, start=false)
   n = 0
   while n < source_array.length do
     starting = yield(starting, source_array[n])
-    puts starting
+    puts starting[n]
     n += 1
   end
   starting
