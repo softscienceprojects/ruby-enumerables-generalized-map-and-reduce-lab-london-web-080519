@@ -14,14 +14,13 @@ end
 # map(dune){|n| n}
 
 
-def reduce(source_array, start=nil)
-  if start == nil
+def reduce(source_array, start=0)
+  if start == 0
     starting = source_array[0]
-    n= 1
   else starting = start
-    n=0
   end
 
+ n =0
   source_array.length.times do
     starting = yield(starting, source_array[n])
     puts "starting is #{starting}"
