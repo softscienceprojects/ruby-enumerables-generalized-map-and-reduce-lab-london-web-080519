@@ -16,8 +16,8 @@ end
 
 def reduce(source_array, start=0)
   if start == 0
-    starting = source_array[0]
-  else starting = start
+    starting = start
+  else starting = source_array[0]
   end
 
   n =0
