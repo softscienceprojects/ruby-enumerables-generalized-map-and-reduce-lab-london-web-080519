@@ -17,10 +17,11 @@ end
 def reduce(source_array, start=nil)
   if start == nil
     starting = source_array[0]
+    n= 1
   else starting = start
+    n=0
   end
 
-  n=0
   source_array.length.times do
     starting = yield(starting, source_array[n])
     puts "starting is #{starting}"
