@@ -21,8 +21,10 @@ def reduce(source_array, start=false)
 
   n = 0
   while n < source_array.length do
+    puts "1st n is #{n}"
     starting = yield(starting, source_array[n])
-    puts starting
+    puts "2nd n is #{n}"
+    puts "starting is #{starting}"
     n += 1
   end
   starting
