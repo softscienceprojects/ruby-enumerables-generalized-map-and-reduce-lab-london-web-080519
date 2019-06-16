@@ -13,7 +13,7 @@ end
 # map([1, 2, 3, -9]){|n| n * -1}
 # map(dune){|n| n}
 
-def reduce(source_array, start=false)
+def reduce(source_array, start=true)
   if start == false
     starting = 0 #source_array[0]
   else starting = start
