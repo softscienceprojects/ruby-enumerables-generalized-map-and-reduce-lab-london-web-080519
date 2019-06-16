@@ -22,7 +22,7 @@ def reduce(source_array, start=false)
 
   n = 0
   source_array.length.times do
-    starting = yield(0, source_array[n])
+    starting = yield(starting, source_array[n])
     puts "starting is #{starting}"
     # reduce(source_array){|memo, n| memo || n}
     n += 1
