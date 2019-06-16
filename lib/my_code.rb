@@ -27,5 +27,5 @@ def reduce(source_array, start=0)
     # reduce(source_array){|memo, n| memo + n}
     n += 1
   end
-  starting
+  starting += start
 end
