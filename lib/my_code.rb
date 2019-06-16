@@ -20,10 +20,9 @@ def reduce(source_array, start=0)
   # else starting = start
   # end
 
-  starting = 0
   n =0
   source_array.length.times do
-    starting = yield(starting, source_array[n])
+    starting = yield(start, source_array[n])
     puts "starting is #{starting}"
     # reduce(source_array){|memo, n| memo + n}
     n += 1
