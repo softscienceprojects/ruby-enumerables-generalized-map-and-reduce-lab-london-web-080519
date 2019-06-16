@@ -20,7 +20,7 @@ def reduce(source_array, start=0)
   else starting = start
   end
 
- n =0
+  n =0
   source_array.length.times do
     starting = yield(starting, source_array[n])
     puts "starting is #{starting}"
