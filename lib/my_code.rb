@@ -19,9 +19,11 @@ def reduce(source_array, start=false)
   else starting = start
   end
 
-  source_array.length.times do
+  n = 0
+  while n < source_array.length do
     starting = yield(source_array)
     puts starting
+    n += 1
   end
   starting
 end
