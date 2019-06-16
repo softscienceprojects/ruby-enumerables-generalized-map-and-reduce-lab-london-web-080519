@@ -16,7 +16,7 @@ end
 
 def reduce(source_array, start=false)
   if start == false
-    starting = source_array[-1]
+    starting = source_array[0]
   else starting = start
   end
 
@@ -25,7 +25,7 @@ def reduce(source_array, start=false)
     starting = yield(starting, source_array[n])
     puts "starting is #{starting}"
     # reduce(source_array){|memo, n| memo + n}
-    n -= 1
+    n += 1
   end
   starting
 end
