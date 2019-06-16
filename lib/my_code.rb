@@ -14,8 +14,8 @@ end
 # map(dune){|n| n}
 
 
-def reduce(source_array, start=0)
-  if start == 0
+def reduce(source_array, start=true)
+  if start == true
     starting = start
   else starting = source_array[0]
   end
