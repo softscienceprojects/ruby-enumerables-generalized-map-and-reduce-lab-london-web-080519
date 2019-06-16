@@ -14,10 +14,10 @@ end
 # map(dune){|n| n}
 
 
-def reduce(source_array, start=true)
-  if start == true
-    starting = start
-  else starting = source_array[0]
+def reduce(source_array, start=nil)
+  if start == nil
+    source_array[0]
+  else starting = start
   end
 
   n =0
